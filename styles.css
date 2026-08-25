@@ -61,11 +61,18 @@ body{
 .reveal.d3{transition-delay:.46s}
 .reveal.d4{transition-delay:.64s}
 
-/* ---------- Arch signature element ---------- */
-.arch{
-  display:block;
-  margin:0 auto;
+/* ---------- Corner arabesque frame (portada + cierre) ---------- */
+.corner-ornament{
+  position:absolute;
+  width:70px;
+  height:70px;
+  z-index:1;
+  opacity:.9;
 }
+.corner-tl{ top:22px; left:18px; }
+.corner-tr{ top:22px; right:18px; transform:scaleX(-1); }
+.corner-bl{ bottom:22px; left:18px; transform:scaleY(-1); }
+.corner-br{ bottom:22px; right:18px; transform:scale(-1,-1); }
 
 /* ---------- Side progress thread ---------- */
 .thread{
@@ -102,17 +109,20 @@ body{
     var(--olive-deep);
   color:var(--ivory);
 }
-#sec-0 .arch-frame{
-  width:min(72vw, 300px);
-  margin-bottom:2.4rem;
-}
 .eyebrow{
   font-family:'Jost', sans-serif;
   font-size:.72rem;
   letter-spacing:.42em;
   text-transform:uppercase;
   color:var(--gold-soft);
-  margin-bottom:1.1rem;
+  margin-bottom:.7rem;
+}
+.subtitle{
+  font-family:'Cormorant Garamond', serif;
+  font-style:italic;
+  font-size:1.05rem;
+  color:var(--gold);
+  margin-bottom:1.4rem;
 }
 .names{
   font-family:'Marcellus', serif;
@@ -126,17 +136,33 @@ body{
   font-family:'Cormorant Garamond', serif;
   font-style:italic;
   font-weight:400;
-  font-size:.62em;
+  font-size:.58em;
   color:var(--gold);
   margin:.18em 0;
 }
 .date-line{
   margin-top:2.2rem;
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  gap:.85rem;
+}
+.date-line .date-part{
   font-family:'Jost', sans-serif;
-  font-size:.95rem;
-  letter-spacing:.32em;
-  color:var(--gold-soft);
+  font-size:.8rem;
+  letter-spacing:.24em;
   text-transform:uppercase;
+  color:var(--gold-soft);
+}
+.date-line .date-day{
+  font-family:'Marcellus', serif;
+  font-size:1.6rem;
+  color:var(--ivory);
+}
+.date-line .date-sep{
+  color:var(--gold);
+  opacity:.6;
+  font-size:.95rem;
 }
 .scroll-hint{
   position:absolute;
@@ -286,13 +312,18 @@ body{
 #sec-4{background:var(--olive-deep); color:var(--ivory);}
 .closing-msg{
   font-family:'Marcellus', serif;
-  font-size:clamp(1.5rem, 5vw, 2.1rem);
+  font-size:clamp(1.4rem, 4.6vw, 1.9rem);
   color:var(--ivory);
-  max-width:22ch;
-  line-height:1.5;
+  max-width:26ch;
+  line-height:1.55;
+}
+.closing-divider{
+  width:60px;
+  height:14px;
+  margin:2rem auto;
+  display:block;
 }
 .closing-names{
-  margin-top:1.6rem;
   font-family:'Cormorant Garamond', serif;
   font-style:italic;
   font-size:1.3rem;
@@ -303,6 +334,11 @@ body{
   .thread{right:10px; gap:11px;}
   .thread button{width:15px; height:20px;}
   .countdown{gap:.9rem;}
+  .corner-ornament{ width:46px; height:46px; }
+  .corner-tl, .corner-tr{ top:14px; }
+  .corner-bl, .corner-br{ bottom:14px; }
+  .corner-tl, .corner-bl{ left:10px; }
+  .corner-tr, .corner-br{ right:10px; }
 }
 
 @media (prefers-reduced-motion: reduce){
