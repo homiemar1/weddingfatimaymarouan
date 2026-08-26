@@ -8,6 +8,7 @@
   --gold-soft:#D8C39A;
   --ink:#2E2A1E;
   --ink-soft:#5A5646;
+  --blush:#C98A7D;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -64,15 +65,15 @@ body{
 /* ---------- Corner arabesque frame (portada + cierre) ---------- */
 .corner-ornament{
   position:absolute;
-  width:70px;
-  height:70px;
+  width:130px;
+  height:130px;
   z-index:1;
-  opacity:.9;
+  opacity:1;
 }
-.corner-tl{ top:22px; left:18px; }
-.corner-tr{ top:22px; right:18px; transform:scaleX(-1); }
-.corner-bl{ bottom:22px; left:18px; transform:scaleY(-1); }
-.corner-br{ bottom:22px; right:18px; transform:scale(-1,-1); }
+.corner-tl{ top:10px; left:8px; }
+.corner-tr{ top:10px; right:8px; transform:scaleX(-1); }
+.corner-bl{ bottom:10px; left:8px; transform:scaleY(-1); }
+.corner-br{ bottom:10px; right:8px; transform:scale(-1,-1); }
 
 /* ---------- Side progress thread ---------- */
 .thread{
@@ -334,11 +335,11 @@ body{
   .thread{right:10px; gap:11px;}
   .thread button{width:15px; height:20px;}
   .countdown{gap:.9rem;}
-  .corner-ornament{ width:46px; height:46px; }
-  .corner-tl, .corner-tr{ top:14px; }
-  .corner-bl, .corner-br{ bottom:14px; }
-  .corner-tl, .corner-bl{ left:10px; }
-  .corner-tr, .corner-br{ right:10px; }
+  .corner-ornament{ width:88px; height:88px; }
+  .corner-tl, .corner-tr{ top:6px; }
+  .corner-bl, .corner-br{ bottom:6px; }
+  .corner-tl, .corner-bl{ left:4px; }
+  .corner-tr, .corner-br{ right:4px; }
 }
 
 @media (prefers-reduced-motion: reduce){
