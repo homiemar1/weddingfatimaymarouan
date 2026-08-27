@@ -14,87 +14,23 @@
 <div class="scroll-container" id="scrollContainer">
 
   <!-- ============ PORTADA ============ -->
-  <section class="section" id="sec-0">
-    <!-- Marco Botánico Barroco Ornamental -->
-    <svg class="floral-frame-svg reveal d1" viewBox="0 0 500 700" preserveAspectRatio="none" aria-hidden="true">
-      <defs>
-        <linearGradient id="goldG1" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#D8C39A"/>
-          <stop offset="50%" stop-color="#B08D57"/>
-          <stop offset="100%" stop-color="#D8C39A"/>
-        </linearGradient>
-      </defs>
-
-      <!-- Molduras Rectangulares y Esquinas con festones -->
-      <rect x="24" y="24" width="452" height="652" rx="6" stroke="url(#goldG1)" stroke-width="1.6" fill="none"/>
-      <rect x="32" y="32" width="436" height="636" rx="4" stroke="#B08D57" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.6" fill="none"/>
-      <rect x="42" y="42" width="416" height="616" rx="3" stroke="url(#goldG1)" stroke-width="1.2" fill="none"/>
-
-      <!-- Remate Superior: Corona Floral y Volutas -->
-      <g stroke="url(#goldG1)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M190 42 C210 20, 290 20, 310 42" stroke-width="1.8"/>
-        <path d="M220 28 C235 15, 265 15, 280 28"/>
-        <circle cx="250" cy="22" r="3.5" fill="#D8C39A"/>
-        <path d="M235 24 C225 10, 215 14, 210 24 M265 24 C275 10, 285 14, 290 24"/>
-      </g>
-
-      <!-- Flor Superior Derecha (Peonía Grabada) -->
-      <g transform="translate(425, 75)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 0 C-18 -22, -42 -10, -34 12 C-26 30, -5 38, 14 30 C30 22, 38 2, 28 -14 C18 -28, 8 -15, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG1)"/>
-        <path d="M-8 -2 C-22 -10, -28 6, -18 18 C-8 26, 4 22, 10 12 C16 2, 8 -8, -8 -2 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#B08D57"/>
-        <path d="M-18 2 C-10 5, 0 4, 8 0 M-14 12 C-6 14, 2 10, 8 4" stroke="#D8C39A" stroke-width="0.8"/>
-        <!-- Hojas y zarcillos -->
-        <path d="M14 25 C26 42, 20 60, 10 75 C4 62, 4 48, 10 32 Z" fill="#B7BE9A" fill-opacity="0.5" stroke="#B08D57"/>
-        <path d="M25 8 C42 12, 54 2, 60 -12 C48 -14, 34 -4, 25 8 Z" fill="#B7BE9A" fill-opacity="0.4" stroke="#B08D57"/>
-      </g>
-
-      <!-- Flor Lateral Izquierda -->
-      <g transform="translate(68, 320)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 0 C-22 -15, -38 4, -30 24 C-20 40, 2 44, 20 32 C36 20, 34 -4, 18 -16 C6 -24, -6 -10, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG1)"/>
-        <path d="M-6 4 C-18 8, -20 22, -10 30 C0 36, 14 30, 16 18 C18 8, 6 2, -6 4 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#B08D57"/>
-        <path d="M-14 12 C-6 16, 2 14, 8 10 M-10 22 C-2 24, 6 20, 10 14" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M8 35 C12 60, 22 92, 10 120" stroke="#B7BE9A" stroke-width="1.5"/>
-        <path d="M15 55 C32 48, 48 52, 54 65 C40 72, 25 68, 15 55 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#B08D57"/>
-      </g>
-
-      <!-- Flor Inferior Izquierda -->
-      <g transform="translate(70, 580)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 0 C-18 -14, -32 4, -25 20 C-18 34, 2 38, 16 28 C30 18, 28 -2, 15 -14 C5 -20, -5 -8, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG1)"/>
-        <path d="M-5 4 C-15 7, -16 18, -8 24 C0 30, 12 24, 14 14 C15 6, 5 1, -5 4 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#B08D57"/>
-        <path d="M12 28 C24 45, 38 48, 48 40 C42 28, 28 24, 12 28 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#B08D57"/>
-      </g>
-
-      <!-- Capullo y Hojas Inferior Derecha -->
-      <g transform="translate(425, 570)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 14 C14 0, 30 4, 35 18 C28 32, 10 36, -4 28 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG1)"/>
-        <path d="M-6 24 C-14 50, -26 85, -14 112" stroke="#B7BE9A" stroke-width="1.5"/>
-        <path d="M-10 46 C-30 42, -45 50, -48 64 C-35 70, -20 64, -10 46 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#B08D57"/>
-      </g>
-
-      <!-- Cartela Barroca Inferior Grabada -->
-      <g transform="translate(250, 642)" stroke="url(#goldG1)" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M-55 -15 C-78 -15, -95 -2, -88 18 C-82 38, -58 45, -46 45 C-32 45, -24 36, -18 46 C-10 58, 10 58, 18 46 C24 36, 32 45, 46 45 C58 45, 82 38, 88 18 C95 -2, 78 -15, 55 -15 C40 -15, 28 -6, 0 -6 C-28 -6, -40 -15, -55 -15 Z" stroke-width="1.6" fill="var(--olive-deep)" fill-opacity="0.9"/>
-        <path d="M-36 6 L36 6 M-44 16 L44 16 M-38 26 L38 26" stroke="#B08D57" stroke-width="0.75" opacity="0.6"/>
-        <path d="M-88 18 C-96 26, -90 40, -80 36" stroke-width="1"/>
-        <path d="M88 18 C96 26, 90 40, 80 36" stroke-width="1"/>
-        <circle cx="0" cy="54" r="2.2" fill="#D8C39A"/>
-      </g>
-    </svg>
-
-    <div class="content-wrapper">
-      <p class="eyebrow reveal d1">Celebra con nosotros</p>
-      <p class="subtitle reveal d1">Nuestra boda</p>
-      <h1 class="names reveal d2">Fatima<span class="amp">&amp;</span>Marouan</h1>
-      <div class="date-line reveal d3">
-        <span class="date-part">Diciembre</span>
-        <span class="date-sep">|</span>
-        <span class="date-day">26</span>
-        <span class="date-sep">|</span>
-        <span class="date-part">2026</span>
-      </div>
-      <div class="scroll-hint reveal d4">
-        <span>Desliza</span>
-        <span class="line"></span>
+  <section class="section framed-section" id="sec-0">
+    <div class="card-frame">
+      <div class="inner-content">
+        <p class="eyebrow reveal d1">Celebra con nosotros</p>
+        <p class="subtitle reveal d1">Nuestra boda</p>
+        <h1 class="names reveal d2">Fatima<span class="amp">&amp;</span>Marouan</h1>
+        <div class="date-line reveal d3">
+          <span class="date-part">Diciembre</span>
+          <span class="date-sep">|</span>
+          <span class="date-day">26</span>
+          <span class="date-sep">|</span>
+          <span class="date-part">2026</span>
+        </div>
+        <div class="scroll-hint reveal d4">
+          <span>Desliza</span>
+          <span class="line"></span>
+        </div>
       </div>
     </div>
   </section>
@@ -155,73 +91,17 @@
   </section>
 
   <!-- ============ CIERRE ============ -->
-  <section class="section" id="sec-4">
-    <!-- Marco Botánico Barroco Ornamental -->
-    <svg class="floral-frame-svg reveal d1" viewBox="0 0 500 700" preserveAspectRatio="none" aria-hidden="true">
-      <defs>
-        <linearGradient id="goldG4" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#D8C39A"/>
-          <stop offset="50%" stop-color="#B08D57"/>
-          <stop offset="100%" stop-color="#D8C39A"/>
-        </linearGradient>
-      </defs>
-
-      <rect x="24" y="24" width="452" height="652" rx="6" stroke="url(#goldG4)" stroke-width="1.6" fill="none"/>
-      <rect x="32" y="32" width="436" height="636" rx="4" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.6" fill="none"/>
-      <rect x="42" y="42" width="416" height="616" rx="3" stroke="url(#goldG4)" stroke-width="1.2" fill="none"/>
-
-      <g stroke="url(#goldG4)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M190 42 C210 20, 290 20, 310 42" stroke-width="1.8"/>
-        <path d="M220 28 C235 15, 265 15, 280 28"/>
-        <circle cx="250" cy="22" r="3.5" fill="#D8C39A"/>
-        <path d="M235 24 C225 10, 215 14, 210 24 M265 24 C275 10, 285 14, 290 24"/>
-      </g>
-
-      <g transform="translate(425, 75)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 0 C-18 -22, -42 -10, -34 12 C-26 30, -5 38, 14 30 C30 22, 38 2, 28 -14 C18 -28, 8 -15, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG4)"/>
-        <path d="M-8 -2 C-22 -10, -28 6, -18 18 C-8 26, 4 22, 10 12 C16 2, 8 -8, -8 -2 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#D8C39A"/>
-        <path d="M-18 2 C-10 5, 0 4, 8 0 M-14 12 C-6 14, 2 10, 8 4" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M14 25 C26 42, 20 60, 10 75 C4 62, 4 48, 10 32 Z" fill="#B7BE9A" fill-opacity="0.5" stroke="#D8C39A"/>
-        <path d="M25 8 C42 12, 54 2, 60 -12 C48 -14, 34 -4, 25 8 Z" fill="#B7BE9A" fill-opacity="0.4" stroke="#D8C39A"/>
-      </g>
-
-      <g transform="translate(68, 320)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 0 C-22 -15, -38 4, -30 24 C-20 40, 2 44, 20 32 C36 20, 34 -4, 18 -16 C6 -24, -6 -10, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG4)"/>
-        <path d="M-6 4 C-18 8, -20 22, -10 30 C0 36, 14 30, 16 18 C18 8, 6 2, -6 4 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#D8C39A"/>
-        <path d="M-14 12 C-6 16, 2 14, 8 10 M-10 22 C-2 24, 6 20, 10 14" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M8 35 C12 60, 22 92, 10 120" stroke="#B7BE9A" stroke-width="1.5"/>
-        <path d="M15 55 C32 48, 48 52, 54 65 C40 72, 25 68, 15 55 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#D8C39A"/>
-      </g>
-
-      <g transform="translate(70, 580)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 0 C-18 -14, -32 4, -25 20 C-18 34, 2 38, 16 28 C30 18, 28 -2, 15 -14 C5 -20, -5 -8, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG4)"/>
-        <path d="M-5 4 C-15 7, -16 18, -8 24 C0 30, 12 24, 14 14 C15 6, 5 1, -5 4 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#D8C39A"/>
-        <path d="M12 28 C24 45, 38 48, 48 40 C42 28, 28 24, 12 28 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#D8C39A"/>
-      </g>
-
-      <g transform="translate(425, 570)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-        <path d="M0 14 C14 0, 30 4, 35 18 C28 32, 10 36, -4 28 Z" fill="#C98A7D" fill-opacity="0.45" stroke="url(#goldG4)"/>
-        <path d="M-6 24 C-14 50, -26 85, -14 112" stroke="#B7BE9A" stroke-width="1.5"/>
-        <path d="M-10 46 C-30 42, -45 50, -48 64 C-35 70, -20 64, -10 46 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#D8C39A"/>
-      </g>
-
-      <g transform="translate(250, 642)" stroke="url(#goldG4)" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M-55 -15 C-78 -15, -95 -2, -88 18 C-82 38, -58 45, -46 45 C-32 45, -24 36, -18 46 C-10 58, 10 58, 18 46 C24 36, 32 45, 46 45 C58 45, 82 38, 88 18 C95 -2, 78 -15, 55 -15 C40 -15, 28 -6, 0 -6 C-28 -6, -40 -15, -55 -15 Z" stroke-width="1.6" fill="var(--olive-deep)" fill-opacity="0.9"/>
-        <path d="M-36 6 L36 6 M-44 16 L44 16 M-38 26 L38 26" stroke="#D8C39A" stroke-width="0.75" opacity="0.6"/>
-        <path d="M-88 18 C-96 26, -90 40, -80 36" stroke-width="1"/>
-        <path d="M88 18 C96 26, 90 40, 80 36" stroke-width="1"/>
-        <circle cx="0" cy="54" r="2.2" fill="#D8C39A"/>
-      </g>
-    </svg>
-
-    <div class="content-wrapper">
-      <p class="closing-msg reveal d2">Con la bendición de <span class="arabic-inline">الله</span> y el cariño de nuestras familias, os invitamos a compartir este día tan especial.</p>
-      <svg class="closing-divider reveal d3" viewBox="0 0 60 14" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 7 H24" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M36 7 H60" stroke="#D8C39A" stroke-width="0.8"/>
-        <rect x="27" y="4" width="6" height="6" transform="rotate(45 30 7)" fill="none" stroke="#D8C39A" stroke-width="0.9"/>
-      </svg>
-      <p class="closing-names reveal d3">Fatima &amp; Marouan</p>
+  <section class="section framed-section" id="sec-4">
+    <div class="card-frame">
+      <div class="inner-content">
+        <p class="closing-msg reveal d2">Con la bendición de <span class="arabic-inline">الله</span> y el cariño de nuestras familias, os invitamos a compartir este día tan especial.</p>
+        <svg class="closing-divider reveal d3" viewBox="0 0 60 14" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 7 H24" stroke="#D8C39A" stroke-width="0.8"/>
+          <path d="M36 7 H60" stroke="#D8C39A" stroke-width="0.8"/>
+          <rect x="27" y="4" width="6" height="6" transform="rotate(45 30 7)" fill="none" stroke="#D8C39A" stroke-width="0.9"/>
+        </svg>
+        <p class="closing-names reveal d3">Fatima &amp; Marouan</p>
+      </div>
     </div>
   </section>
 
