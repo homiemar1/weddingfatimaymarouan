@@ -15,95 +15,90 @@
 
   <!-- ============ PORTADA ============ -->
   <section class="section" id="sec-0">
-    <!-- Marco Barroco Grabado Botánico -->
-    <div class="baroque-frame-wrapper reveal d1" aria-hidden="true">
-      <svg class="baroque-frame-svg" viewBox="0 0 700 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Marco Grabado Botánico y Rococó (100% SVG Código Nativo) -->
+    <div class="vintage-frame-container reveal d1" aria-hidden="true">
+      <svg class="vintage-frame-svg" viewBox="0 0 600 860" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="goldStroke0" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#D8C39A"/>
             <stop offset="50%" stop-color="#B08D57"/>
             <stop offset="100%" stop-color="#D8C39A"/>
           </linearGradient>
-          <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
-            <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.35"/>
-          </filter>
         </defs>
 
-        <!-- Moldura rectangular exterior con rayado grabado clásico -->
-        <rect x="45" y="55" width="610" height="850" rx="4" stroke="url(#goldGrad)" stroke-width="2" fill="none" filter="url(#subtleGlow)"/>
-        <rect x="52" y="62" width="596" height="836" rx="2" stroke="#B08D57" stroke-width="0.8" stroke-dasharray="4 2" opacity="0.75" fill="none"/>
-        <rect x="62" y="72" width="576" height="816" rx="2" stroke="url(#goldGrad)" stroke-width="1.2" fill="none"/>
+        <!-- Moldura grabada rectangular doble -->
+        <rect x="36" y="44" width="528" height="772" rx="3" stroke="url(#goldStroke0)" stroke-width="1.8" fill="none"/>
+        <rect x="42" y="50" width="516" height="760" rx="2" stroke="#B08D57" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" fill="none"/>
+        <rect x="52" y="60" width="496" height="740" rx="2" stroke="url(#goldStroke0)" stroke-width="1" fill="none"/>
 
-        <!-- Arco superior tallado e insignia grabada -->
-        <g stroke="url(#goldGrad)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <!-- Arco y volutas superiores -->
-          <path d="M120 180 C120 90, 230 45, 350 45 C470 45, 580 90, 580 180" stroke-width="2"/>
-          <path d="M140 180 C140 110, 240 65, 350 65 C460 65, 560 110, 560 180" stroke-width="1" opacity="0.8"/>
+        <!-- Arco de moldura superior con volutas barrocas -->
+        <g stroke="url(#goldStroke0)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Bóveda superior -->
+          <path d="M100 160 C100 85, 200 45, 300 45 C400 45, 500 85, 500 160" stroke-width="1.6"/>
+          <path d="M116 160 C116 100, 205 62, 300 62 C395 62, 484 100, 484 160" stroke-width="0.9" opacity="0.8"/>
           
-          <!-- Lazo e instrumentos clásicos superiores (Corona de laurel y antorchas) -->
-          <path d="M350 30 C338 18, 320 22, 330 38 C342 46, 350 56, 350 56 C350 56, 358 46, 370 38 C380 22, 362 18, 350 30 Z" fill="#B08D57" fill-opacity="0.25"/>
-          <path d="M350 42 C330 30, 290 32, 270 48 M350 42 C370 30, 410 32, 430 48" stroke-width="1.6"/>
-          <path d="M310 32 L390 62 M390 32 L310 62" stroke-width="1.2" opacity="0.85"/>
-          <circle cx="350" cy="48" r="4" fill="#B08D57"/>
+          <!-- Lazo e insignia clásica grabada en el remate superior -->
+          <path d="M300 28 C288 16, 274 20, 282 35 C292 42, 300 52, 300 52 C300 52, 308 42, 318 35 C326 20, 312 16, 300 28 Z" fill="#B08D57" fill-opacity="0.3"/>
+          <path d="M300 38 C280 26, 246 28, 228 42 M300 38 C320 26, 354 28, 372 42" stroke-width="1.4"/>
+          <path d="M264 28 L336 56 M336 28 L264 56" stroke-width="1" opacity="0.75"/>
+          <circle cx="300" cy="44" r="3.5" fill="#B08D57"/>
 
-          <!-- Acantos y filigranas de esquinas superiores -->
-          <path d="M62 72 C95 72, 110 95, 110 130 C110 155, 95 170, 75 170 C55 170, 45 150, 52 130 C58 112, 80 100, 105 100"/>
-          <path d="M638 72 C605 72, 590 95, 590 130 C590 155, 605 170, 625 170 C645 170, 655 150, 648 130 C642 112, 620 100, 595 100"/>
+          <!-- Volutas de esquinas superiores -->
+          <path d="M52 60 C80 60, 94 80, 94 110 C94 130, 80 144, 64 144 C46 144, 38 128, 44 110 C50 95, 68 85, 90 85"/>
+          <path d="M548 60 C520 60, 506 80, 506 110 C506 130, 520 144, 536 144 C554 144, 562 128, 556 110 C550 95, 532 85, 510 85"/>
         </g>
 
-        <!-- Flores y peonías botánicas grabadas en tonos Blush y Oro -->
-        <!-- Flor superior derecha -->
-        <g transform="translate(540, 195) scale(0.95)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-          <!-- Pétalos con relleno Blush sutil -->
-          <path d="M0 0 C-25 -30, -55 -15, -45 15 C-38 38, -10 50, 15 42 C40 35, 52 5, 38 -20 C25 -40, 12 -20, 0 0 Z" fill="#C98A7D" fill-opacity="0.3" stroke="url(#goldGrad)"/>
-          <path d="M-15 -5 C-35 -18, -42 5, -28 22 C-15 35, 5 32, 15 18 C25 5, 12 -12, -15 -5 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#B08D57"/>
-          <path d="M-30 0 C-20 5, -10 8, 0 5 M-25 15 C-12 18, 0 15, 10 8 M-18 -15 C-5 -8, 5 -5, 18 -10" stroke="#D8C39A" stroke-width="0.9" opacity="0.85"/>
-          <!-- Capullo colgante lateral -->
-          <path d="M42 35 C55 60, 48 85, 35 105 C25 90, 22 70, 32 50 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#B08D57"/>
+        <!-- Elementos Botánicos Grabados (Pétalos Blush #C98A7D y Hojas #B7BE9A) -->
+        <!-- Peonía grabada superior derecha -->
+        <g transform="translate(460, 175) scale(0.85)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 0 C-22 -26, -48 -12, -40 14 C-32 34, -8 44, 14 36 C36 30, 46 4, 34 -18 C22 -35, 10 -18, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldStroke0)"/>
+          <path d="M-12 -4 C-30 -15, -36 5, -24 20 C-12 30, 4 28, 12 16 C20 4, 10 -10, -12 -4 Z" fill="#C98A7D" fill-opacity="0.48" stroke="#B08D57"/>
+          <path d="M-26 0 C-18 4, -8 6, 0 4 M-20 12 C-10 15, 0 12, 8 6 M-15 -12 C-4 -6, 4 -4, 15 -8" stroke="#D8C39A" stroke-width="0.85" opacity="0.9"/>
+          <!-- Capullo lateral botánico -->
+          <path d="M38 30 C50 52, 42 74, 30 92 C22 78, 20 62, 28 44 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#B08D57"/>
         </g>
 
-        <!-- Flor lateral izquierda media -->
-        <g transform="translate(100, 490) scale(0.92)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-          <path d="M0 0 C-30 -20, -50 5, -40 32 C-30 55, 0 60, 28 45 C50 30, 48 -5, 25 -22 C8 -32, -10 -15, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldGrad)"/>
-          <path d="M-10 8 C-28 12, -30 32, -15 42 C0 50, 20 40, 22 25 C25 10, 8 2, -10 8 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#B08D57"/>
-          <path d="M-22 18 C-10 22, 2 20, 12 15 M-18 30 C-5 32, 8 28, 15 20" stroke="#D8C39A" stroke-width="0.9" opacity="0.85"/>
-          <!-- Tallo y hojas botánicas grabadas -->
-          <path d="M12 55 C18 95, 30 145, 15 190" stroke="#B7BE9A" stroke-width="1.8"/>
-          <path d="M22 95 C45 85, 68 92, 75 110 C55 120, 35 115, 22 95 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#B08D57"/>
+        <!-- Peonía y rama botánica grabada lateral izquierda -->
+        <g transform="translate(85, 435) scale(0.82)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 0 C-26 -18, -44 4, -35 28 C-26 48, 0 52, 24 40 C44 26, 42 -4, 22 -20 C8 -28, -8 -12, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldStroke0)"/>
+          <path d="M-8 6 C-24 10, -26 28, -12 36 C0 44, 18 36, 20 22 C22 10, 8 2, -8 6 Z" fill="#C98A7D" fill-opacity="0.48" stroke="#B08D57"/>
+          <path d="M-18 16 C-8 20, 2 18, 10 14 M-14 26 C-4 28, 6 24, 12 18" stroke="#D8C39A" stroke-width="0.85" opacity="0.9"/>
+          <!-- Tallo y hojas grabadas -->
+          <path d="M10 48 C16 84, 26 128, 12 168" stroke="#B7BE9A" stroke-width="1.6"/>
+          <path d="M18 84 C38 75, 58 82, 64 98 C48 106, 30 102, 18 84 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#B08D57"/>
         </g>
 
-        <!-- Flor inferior izquierda -->
-        <g transform="translate(85, 770) scale(0.88)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-          <path d="M0 0 C-25 -18, -45 5, -35 28 C-25 48, 5 52, 25 38 C42 25, 40 -5, 20 -18 C5 -28, -8 -12, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldGrad)"/>
-          <path d="M-8 6 C-22 10, -25 26, -12 35 C0 42, 16 34, 18 20 C20 8, 5 2, -8 6 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#B08D57"/>
-          <path d="M10 45 C15 75, 25 115, 10 145" stroke="#B7BE9A" stroke-width="1.6"/>
-          <path d="M18 70 C40 60, 60 65, 68 80 C50 90, 30 85, 18 70 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#B08D57"/>
+        <!-- Flores y ramas inferiores -->
+        <g transform="translate(75, 680) scale(0.78)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 0 C-22 -16, -40 4, -30 25 C-22 42, 4 46, 22 34 C38 22, 36 -4, 18 -16 C4 -24, -6 -10, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldStroke0)"/>
+          <path d="M-6 5 C-20 8, -22 23, -10 30 C0 37, 14 30, 16 18 C18 8, 4 2, -6 5 Z" fill="#C98A7D" fill-opacity="0.48" stroke="#B08D57"/>
+          <path d="M8 40 C12 66, 20 100, 8 126" stroke="#B7BE9A" stroke-width="1.5"/>
+          <path d="M15 60 C34 52, 52 56, 58 70 C42 78, 26 74, 15 60 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#B08D57"/>
         </g>
 
-        <!-- Capullo y hojas inferior derecha -->
-        <g transform="translate(580, 750) scale(0.9)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
-          <path d="M0 20 C18 0, 42 5, 48 25 C40 45, 15 50, -5 38 Z" fill="#C98A7D" fill-opacity="0.3" stroke="url(#goldGrad)"/>
-          <path d="M-8 32 C-20 70, -35 120, -20 160" stroke="#B7BE9A" stroke-width="1.6"/>
-          <path d="M-15 65 C-45 60, -65 72, -70 90 C-50 98, -30 90, -15 65 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#B08D57"/>
+        <g transform="translate(500, 665) scale(0.8)" stroke="#B08D57" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 16 C16 0, 36 4, 42 22 C35 38, 14 44, -4 34 Z" fill="#C98A7D" fill-opacity="0.32" stroke="url(#goldStroke0)"/>
+          <path d="M-6 28 C-16 60, -30 104, -16 138" stroke="#B7BE9A" stroke-width="1.5"/>
+          <path d="M-12 56 C-38 52, -56 62, -60 78 C-44 85, -26 78, -12 56 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#B08D57"/>
         </g>
 
-        <!-- Gran Cartela Barroca Inferior (Rococó Scroll Cartouche) -->
-        <g transform="translate(350, 835)" stroke="url(#goldGrad)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#subtleGlow)">
-          <!-- Silueta del escudo central con sombreado fino -->
-          <path d="M-90 -55 C-130 -55, -160 -30, -150 15 C-140 50, -100 65, -80 65 C-60 65, -45 50, -35 70 C-20 88, 20 88, 35 70 C45 50, 60 65, 80 65 C100 65, 140 50, 150 15 C160 -30, 130 -55, 90 -55 C65 -55, 45 -40, 0 -40 C-45 -40, -65 -55, -90 -55 Z" stroke-width="1.8" fill="var(--olive-deep)" fill-opacity="0.85"/>
-          <!-- Rayado interior del escudo -->
-          <path d="M-60 -25 L60 -25 M-70 -10 L70 -10 M-75 5 L75 5 M-70 20 L70 20 M-55 35 L55 35" stroke="#B08D57" stroke-width="0.8" opacity="0.6"/>
-          <!-- Volutas de los extremos -->
-          <path d="M-150 15 C-165 30, -155 55, -135 50 C-115 45, -120 25, -140 20" stroke-width="1.2"/>
-          <path d="M150 15 C165 30, 155 55, 135 50 C115 45, 120 25, 140 20" stroke-width="1.2"/>
-          <!-- Colgante floral inferior central -->
-          <path d="M0 80 C-10 95, -5 110, 0 115 C5 110, 10 95, 0 80 Z" fill="#B08D57" fill-opacity="0.4"/>
-          <circle cx="0" cy="120" r="2.5" fill="#D8C39A"/>
+        <!-- Cartela barroca rococó inferior -->
+        <g transform="translate(300, 745)" stroke="url(#goldStroke0)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Silueta del blasón / cartela -->
+          <path d="M-75 -46 C-108 -46, -134 -25, -126 12 C-118 42, -84 55, -68 55 C-50 55, -38 42, -30 58 C-16 74, 16 74, 30 58 C38 42, 50 55, 68 55 C84 55, 118 42, 126 12 C134 -25, 108 -46, 75 -46 C54 -46, 38 -34, 0 -34 C-38 -34, -54 -46, -75 -46 Z" stroke-width="1.6" fill="var(--olive-deep)" fill-opacity="0.9"/>
+          <!-- Rayado clásico de cartela -->
+          <path d="M-50 -20 L50 -20 M-60 -8 L60 -8 M-64 4 L64 4 M-58 16 L58 16 M-46 28 L46 28" stroke="#B08D57" stroke-width="0.75" opacity="0.65"/>
+          <!-- Volutas extremas -->
+          <path d="M-126 12 C-138 25, -130 46, -114 42 C-98 38, -102 20, -118 16" stroke-width="1.1"/>
+          <path d="M126 12 C138 25, 130 46, 114 42 C98 38, 102 20, 118 16" stroke-width="1.1"/>
+          <!-- Gota / colgante rococó -->
+          <path d="M0 68 C-8 80, -4 92, 0 96 C4 92, 8 80, 0 68 Z" fill="#B08D57" fill-opacity="0.4"/>
+          <circle cx="0" cy="100" r="2" fill="#D8C39A"/>
         </g>
       </svg>
     </div>
 
-    <!-- Contenido de la Portada -->
+    <!-- Contenido Portada -->
     <p class="eyebrow reveal d1">Celebra con nosotros</p>
     <p class="subtitle reveal d1">Nuestra boda</p>
     <h1 class="names reveal d2">Fatima<span class="amp">&amp;</span>Marouan</h1>
@@ -177,77 +172,74 @@
 
   <!-- ============ CIERRE ============ -->
   <section class="section" id="sec-4">
-    <!-- Marco Barroco Grabado Botánico -->
-    <div class="baroque-frame-wrapper reveal d1" aria-hidden="true">
-      <svg class="baroque-frame-svg" viewBox="0 0 700 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Marco Grabado Botánico y Rococó (100% SVG Código Nativo) -->
+    <div class="vintage-frame-container reveal d1" aria-hidden="true">
+      <svg class="vintage-frame-svg" viewBox="0 0 600 860" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+          <linearGradient id="goldStroke4" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#D8C39A"/>
             <stop offset="50%" stop-color="#B08D57"/>
             <stop offset="100%" stop-color="#D8C39A"/>
           </linearGradient>
         </defs>
 
-        <!-- Molduras concéntricas -->
-        <rect x="45" y="55" width="610" height="850" rx="4" stroke="url(#goldGrad2)" stroke-width="2" fill="none"/>
-        <rect x="52" y="62" width="596" height="836" rx="2" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="4 2" opacity="0.75" fill="none"/>
-        <rect x="62" y="72" width="576" height="816" rx="2" stroke="url(#goldGrad2)" stroke-width="1.2" fill="none"/>
+        <rect x="36" y="44" width="528" height="772" rx="3" stroke="url(#goldStroke4)" stroke-width="1.8" fill="none"/>
+        <rect x="42" y="50" width="516" height="760" rx="2" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" fill="none"/>
+        <rect x="52" y="60" width="496" height="740" rx="2" stroke="url(#goldStroke4)" stroke-width="1" fill="none"/>
 
-        <!-- Arco superior tallado e insignia -->
-        <g stroke="url(#goldGrad2)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M120 180 C120 90, 230 45, 350 45 C470 45, 580 90, 580 180" stroke-width="2"/>
-          <path d="M140 180 C140 110, 240 65, 350 65 C460 65, 560 110, 560 180" stroke-width="1" opacity="0.8"/>
-          <path d="M350 30 C338 18, 320 22, 330 38 C342 46, 350 56, 350 56 C350 56, 358 46, 370 38 C380 22, 362 18, 350 30 Z" fill="#D8C39A" fill-opacity="0.25"/>
-          <path d="M350 42 C330 30, 290 32, 270 48 M350 42 C370 30, 410 32, 430 48" stroke-width="1.6"/>
-          <path d="M310 32 L390 62 M390 32 L310 62" stroke-width="1.2" opacity="0.85"/>
-          <circle cx="350" cy="48" r="4" fill="#D8C39A"/>
+        <g stroke="url(#goldStroke4)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M100 160 C100 85, 200 45, 300 45 C400 45, 500 85, 500 160" stroke-width="1.6"/>
+          <path d="M116 160 C116 100, 205 62, 300 62 C395 62, 484 100, 484 160" stroke-width="0.9" opacity="0.8"/>
+          <path d="M300 28 C288 16, 274 20, 282 35 C292 42, 300 52, 300 52 C300 52, 308 42, 318 35 C326 20, 312 16, 300 28 Z" fill="#D8C39A" fill-opacity="0.3"/>
+          <path d="M300 38 C280 26, 246 28, 228 42 M300 38 C320 26, 354 28, 372 42" stroke-width="1.4"/>
+          <path d="M264 28 L336 56 M336 28 L264 56" stroke-width="1" opacity="0.75"/>
+          <circle cx="300" cy="44" r="3.5" fill="#D8C39A"/>
 
-          <path d="M62 72 C95 72, 110 95, 110 130 C110 155, 95 170, 75 170 C55 170, 45 150, 52 130 C58 112, 80 100, 105 100"/>
-          <path d="M638 72 C605 72, 590 95, 590 130 C590 155, 605 170, 625 170 C645 170, 655 150, 648 130 C642 112, 620 100, 595 100"/>
+          <path d="M52 60 C80 60, 94 80, 94 110 C94 130, 80 144, 64 144 C46 144, 38 128, 44 110 C50 95, 68 85, 90 85"/>
+          <path d="M548 60 C520 60, 506 80, 506 110 C506 130, 520 144, 536 144 C554 144, 562 128, 556 110 C550 95, 532 85, 510 85"/>
         </g>
 
-        <!-- Flores y peonías en Blush y Oro Suave -->
-        <g transform="translate(540, 195) scale(0.95)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-          <path d="M0 0 C-25 -30, -55 -15, -45 15 C-38 38, -10 50, 15 42 C40 35, 52 5, 38 -20 C25 -40, 12 -20, 0 0 Z" fill="#C98A7D" fill-opacity="0.3" stroke="url(#goldGrad2)"/>
-          <path d="M-15 -5 C-35 -18, -42 5, -28 22 C-15 35, 5 32, 15 18 C25 5, 12 -12, -15 -5 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#D8C39A"/>
-          <path d="M-30 0 C-20 5, -10 8, 0 5 M-25 15 C-12 18, 0 15, 10 8 M-18 -15 C-5 -8, 5 -5, 18 -10" stroke="#D8C39A" stroke-width="0.9" opacity="0.85"/>
-          <path d="M42 35 C55 60, 48 85, 35 105 C25 90, 22 70, 32 50 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#D8C39A"/>
+        <!-- Botánica en cierre -->
+        <g transform="translate(460, 175) scale(0.85)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 0 C-22 -26, -48 -12, -40 14 C-32 34, -8 44, 14 36 C36 30, 46 4, 34 -18 C22 -35, 10 -18, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldStroke4)"/>
+          <path d="M-12 -4 C-30 -15, -36 5, -24 20 C-12 30, 4 28, 12 16 C20 4, 10 -10, -12 -4 Z" fill="#C98A7D" fill-opacity="0.48" stroke="#D8C39A"/>
+          <path d="M-26 0 C-18 4, -8 6, 0 4 M-20 12 C-10 15, 0 12, 8 6 M-15 -12 C-4 -6, 4 -4, 15 -8" stroke="#D8C39A" stroke-width="0.85" opacity="0.9"/>
+          <path d="M38 30 C50 52, 42 74, 30 92 C22 78, 20 62, 28 44 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#D8C39A"/>
         </g>
 
-        <g transform="translate(100, 490) scale(0.92)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-          <path d="M0 0 C-30 -20, -50 5, -40 32 C-30 55, 0 60, 28 45 C50 30, 48 -5, 25 -22 C8 -32, -10 -15, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldGrad2)"/>
-          <path d="M-10 8 C-28 12, -30 32, -15 42 C0 50, 20 40, 22 25 C25 10, 8 2, -10 8 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#D8C39A"/>
-          <path d="M-22 18 C-10 22, 2 20, 12 15 M-18 30 C-5 32, 8 28, 15 20" stroke="#D8C39A" stroke-width="0.9" opacity="0.85"/>
-          <path d="M12 55 C18 95, 30 145, 15 190" stroke="#B7BE9A" stroke-width="1.8"/>
-          <path d="M22 95 C45 85, 68 92, 75 110 C55 120, 35 115, 22 95 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#D8C39A"/>
+        <g transform="translate(85, 435) scale(0.82)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 0 C-26 -18, -44 4, -35 28 C-26 48, 0 52, 24 40 C44 26, 42 -4, 22 -20 C8 -28, -8 -12, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldStroke4)"/>
+          <path d="M-8 6 C-24 10, -26 28, -12 36 C0 44, 18 36, 20 22 C22 10, 8 2, -8 6 Z" fill="#C98A7D" fill-opacity="0.48" stroke="#D8C39A"/>
+          <path d="M-18 16 C-8 20, 2 18, 10 14 M-14 26 C-4 28, 6 24, 12 18" stroke="#D8C39A" stroke-width="0.85" opacity="0.9"/>
+          <path d="M10 48 C16 84, 26 128, 12 168" stroke="#B7BE9A" stroke-width="1.6"/>
+          <path d="M18 84 C38 75, 58 82, 64 98 C48 106, 30 102, 18 84 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#D8C39A"/>
         </g>
 
-        <g transform="translate(85, 770) scale(0.88)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-          <path d="M0 0 C-25 -18, -45 5, -35 28 C-25 48, 5 52, 25 38 C42 25, 40 -5, 20 -18 C5 -28, -8 -12, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldGrad2)"/>
-          <path d="M-8 6 C-22 10, -25 26, -12 35 C0 42, 16 34, 18 20 C20 8, 5 2, -8 6 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#D8C39A"/>
-          <path d="M10 45 C15 75, 25 115, 10 145" stroke="#B7BE9A" stroke-width="1.6"/>
-          <path d="M18 70 C40 60, 60 65, 68 80 C50 90, 30 85, 18 70 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#D8C39A"/>
+        <g transform="translate(75, 680) scale(0.78)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 0 C-22 -16, -40 4, -30 25 C-22 42, 4 46, 22 34 C38 22, 36 -4, 18 -16 C4 -24, -6 -10, 0 0 Z" fill="#C98A7D" fill-opacity="0.35" stroke="url(#goldStroke4)"/>
+          <path d="M-6 5 C-20 8, -22 23, -10 30 C0 37, 14 30, 16 18 C18 8, 4 2, -6 5 Z" fill="#C98A7D" fill-opacity="0.48" stroke="#D8C39A"/>
+          <path d="M8 40 C12 66, 20 100, 8 126" stroke="#B7BE9A" stroke-width="1.5"/>
+          <path d="M15 60 C34 52, 52 56, 58 70 C42 78, 26 74, 15 60 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#D8C39A"/>
         </g>
 
-        <g transform="translate(580, 750) scale(0.9)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
-          <path d="M0 20 C18 0, 42 5, 48 25 C40 45, 15 50, -5 38 Z" fill="#C98A7D" fill-opacity="0.3" stroke="url(#goldGrad2)"/>
-          <path d="M-8 32 C-20 70, -35 120, -20 160" stroke="#B7BE9A" stroke-width="1.6"/>
-          <path d="M-15 65 C-45 60, -65 72, -70 90 C-50 98, -30 90, -15 65 Z" fill="#B7BE9A" fill-opacity="0.3" stroke="#D8C39A"/>
+        <g transform="translate(500, 665) scale(0.8)" stroke="#D8C39A" stroke-width="1.2" stroke-linecap="round">
+          <path d="M0 16 C16 0, 36 4, 42 22 C35 38, 14 44, -4 34 Z" fill="#C98A7D" fill-opacity="0.32" stroke="url(#goldStroke4)"/>
+          <path d="M-6 28 C-16 60, -30 104, -16 138" stroke="#B7BE9A" stroke-width="1.5"/>
+          <path d="M-12 56 C-38 52, -56 62, -60 78 C-44 85, -26 78, -12 56 Z" fill="#B7BE9A" fill-opacity="0.32" stroke="#D8C39A"/>
         </g>
 
-        <!-- Gran Cartela Barroca Inferior -->
-        <g transform="translate(350, 835)" stroke="url(#goldGrad2)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M-90 -55 C-130 -55, -160 -30, -150 15 C-140 50, -100 65, -80 65 C-60 65, -45 50, -35 70 C-20 88, 20 88, 35 70 C45 50, 60 65, 80 65 C100 65, 140 50, 150 15 C160 -30, 130 -55, 90 -55 C65 -55, 45 -40, 0 -40 C-45 -40, -65 -55, -90 -55 Z" stroke-width="1.8" fill="var(--olive-deep)" fill-opacity="0.85"/>
-          <path d="M-60 -25 L60 -25 M-70 -10 L70 -10 M-75 5 L75 5 M-70 20 L70 20 M-55 35 L55 35" stroke="#D8C39A" stroke-width="0.8" opacity="0.6"/>
-          <path d="M-150 15 C-165 30, -155 55, -135 50 C-115 45, -120 25, -140 20" stroke-width="1.2"/>
-          <path d="M150 15 C165 30, 155 55, 135 50 C115 45, 120 25, 140 20" stroke-width="1.2"/>
-          <path d="M0 80 C-10 95, -5 110, 0 115 C5 110, 10 95, 0 80 Z" fill="#D8C39A" fill-opacity="0.4"/>
-          <circle cx="0" cy="120" r="2.5" fill="#D8C39A"/>
+        <g transform="translate(300, 745)" stroke="url(#goldStroke4)" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-75 -46 C-108 -46, -134 -25, -126 12 C-118 42, -84 55, -68 55 C-50 55, -38 42, -30 58 C-16 74, 16 74, 30 58 C38 42, 50 55, 68 55 C84 55, 118 42, 126 12 C134 -25, 108 -46, 75 -46 C54 -46, 38 -34, 0 -34 C-38 -34, -54 -46, -75 -46 Z" stroke-width="1.6" fill="var(--olive-deep)" fill-opacity="0.9"/>
+          <path d="M-50 -20 L50 -20 M-60 -8 L60 -8 M-64 4 L64 4 M-58 16 L58 16 M-46 28 L46 28" stroke="#D8C39A" stroke-width="0.75" opacity="0.65"/>
+          <path d="M-126 12 C-138 25, -130 46, -114 42 C-98 38, -102 20, -118 16" stroke-width="1.1"/>
+          <path d="M126 12 C138 25, 130 46, 114 42 C98 38, 102 20, 118 16" stroke-width="1.1"/>
+          <path d="M0 68 C-8 80, -4 92, 0 96 C4 92, 8 80, 0 68 Z" fill="#D8C39A" fill-opacity="0.4"/>
+          <circle cx="0" cy="100" r="2" fill="#D8C39A"/>
         </g>
       </svg>
     </div>
 
-    <!-- Contenido del Cierre -->
+    <!-- Contenido Cierre -->
     <p class="closing-msg reveal d2">Con la bendición de <span class="arabic-inline">الله</span> y el cariño de nuestras familias, os invitamos a compartir este día tan especial.</p>
     <svg class="closing-divider reveal d3" viewBox="0 0 60 14" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 7 H24" stroke="#D8C39A" stroke-width="0.8"/>
