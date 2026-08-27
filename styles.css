@@ -62,37 +62,23 @@ body{
 .reveal.d3{transition-delay:.46s}
 .reveal.d4{transition-delay:.64s}
 
-/* ---------- Corner arabesque frame (portada + cierre) ---------- */
-/* ---------- Full rectangular frame (portada + cierre) ---------- */
-.frame{
+/* ---------- Marco Barroco Grabado (portada + cierre) ---------- */
+.baroque-frame-wrapper{
   position:absolute;
-  inset:20px;
-  border:1px solid var(--gold);
+  inset:14px;
   pointer-events:none;
-}
-.frame::before{
-  content:'';
-  position:absolute;
-  inset:7px;
-  border:1px solid var(--gold);
-  opacity:.55;
-}
-#sec-4 .frame,
-#sec-4 .frame::before{
-  border-color:var(--gold-soft);
-}
-
-.corner-ornament{
-  position:absolute;
-  width:104px;
-  height:104px;
   z-index:1;
-  opacity:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
-.corner-tl{ top:6px; left:6px; }
-.corner-tr{ top:6px; right:6px; transform:scaleX(-1); }
-.corner-bl{ bottom:6px; left:6px; transform:scaleY(-1); }
-.corner-br{ bottom:6px; right:6px; transform:scale(-1,-1); }
+.baroque-frame-svg{
+  width:100%;
+  height:100%;
+  max-width:540px;
+  max-height:860px;
+  object-fit:contain;
+}
 
 /* ---------- Side progress thread ---------- */
 .thread{
@@ -136,6 +122,7 @@ body{
   text-transform:uppercase;
   color:var(--gold-soft);
   margin-bottom:.7rem;
+  z-index:2;
 }
 .subtitle{
   font-family:'Cormorant Garamond', serif;
@@ -143,13 +130,15 @@ body{
   font-size:1.05rem;
   color:var(--gold);
   margin-bottom:1.4rem;
+  z-index:2;
 }
 .names{
   font-family:'Marcellus', serif;
-  font-size:clamp(2.6rem, 9vw, 4.6rem);
+  font-size:clamp(2.6rem, 8.5vw, 4.4rem);
   line-height:1.08;
   letter-spacing:.01em;
   color:var(--ivory);
+  z-index:2;
 }
 .names .amp{
   display:block;
@@ -166,6 +155,7 @@ body{
   align-items:baseline;
   justify-content:center;
   gap:.85rem;
+  z-index:2;
 }
 .date-line .date-part{
   font-family:'Jost', sans-serif;
@@ -186,7 +176,7 @@ body{
 }
 .scroll-hint{
   position:absolute;
-  bottom:6vh;
+  bottom:5vh;
   left:50%;
   transform:translateX(-50%);
   font-family:'Jost', sans-serif;
@@ -198,6 +188,7 @@ body{
   flex-direction:column;
   align-items:center;
   gap:.5rem;
+  z-index:2;
 }
 .scroll-hint span.line{
   width:1px;
@@ -336,6 +327,7 @@ body{
   color:var(--ivory);
   max-width:26ch;
   line-height:1.55;
+  z-index:2;
 }
 .closing-msg .arabic-inline{
   font-family:'Amiri', serif;
@@ -346,25 +338,21 @@ body{
   height:14px;
   margin:2rem auto;
   display:block;
+  z-index:2;
 }
 .closing-names{
   font-family:'Cormorant Garamond', serif;
   font-style:italic;
   font-size:1.3rem;
   color:var(--gold-soft);
+  z-index:2;
 }
 
 @media (max-width:520px){
   .thread{right:10px; gap:11px;}
   .thread button{width:15px; height:20px;}
   .countdown{gap:.9rem;}
-  .frame{ inset:12px; }
-  .frame::before{ inset:5px; }
-  .corner-ornament{ width:68px; height:68px; }
-  .corner-tl, .corner-tr{ top:2px; }
-  .corner-bl, .corner-br{ bottom:2px; }
-  .corner-tl, .corner-bl{ left:2px; }
-  .corner-tr, .corner-br{ right:2px; }
+  .baroque-frame-wrapper{ inset:8px; }
 }
 
 @media (prefers-reduced-motion: reduce){
