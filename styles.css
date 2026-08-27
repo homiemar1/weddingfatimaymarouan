@@ -63,7 +63,7 @@ body{
 .reveal.d4{transition-delay:.64s}
 
 /* ---------- Marco Barroco Grabado (portada + cierre) ---------- */
-.baroque-frame-wrapper{
+.vintage-frame-container{
   position:absolute;
   inset:14px;
   pointer-events:none;
@@ -72,12 +72,11 @@ body{
   align-items:center;
   justify-content:center;
 }
-.baroque-frame-svg{
+.vintage-frame-svg{
   width:100%;
   height:100%;
   max-width:540px;
   max-height:860px;
-  object-fit:contain;
 }
 
 /* ---------- Side progress thread ---------- */
@@ -352,7 +351,7 @@ body{
   .thread{right:10px; gap:11px;}
   .thread button{width:15px; height:20px;}
   .countdown{gap:.9rem;}
-  .baroque-frame-wrapper{ inset:8px; }
+  .vintage-frame-container{ inset:8px; }
 }
 
 @media (prefers-reduced-motion: reduce){
