@@ -15,68 +15,129 @@
 
   <!-- ============ PORTADA ============ -->
   <section class="section" id="sec-0">
-    <!-- Moldura perimetral flexible -->
-    <div class="responsive-border reveal d1"></div>
+    <div class="frame reveal d1"></div>
 
-    <!-- 4 Esquinas Botánicas que se anclan a los bordes sin deformarse -->
-    <svg class="botanical-corner corner-top-left reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M10 10 L150 10 M10 10 L10 150" stroke="#B08D57" stroke-width="1.6"/>
-      <path d="M18 18 L130 18 M18 18 L18 130" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <!-- Hojas y peonía superior izquierda -->
-      <path d="M10 10 C45 35, 75 25, 95 10 C70 45, 60 75, 10 95" stroke="#B08D57" stroke-width="1.2" fill="#B7BE9A" fill-opacity="0.35"/>
-      <path d="M25 25 C45 45, 65 40, 75 25 C60 55, 55 65, 25 75 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#B08D57"/>
-    </svg>
-
-    <svg class="botanical-corner corner-top-right reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M150 10 L10 10 M150 10 L150 150" stroke="#B08D57" stroke-width="1.6"/>
-      <path d="M142 18 L30 18 M142 18 L142 130" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <!-- Gran peonía grabada superior derecha -->
-      <g transform="translate(105, 55)">
-        <path d="M0 0 C-22 -26, -48 -12, -40 14 C-32 34, -8 44, 14 30 C36 22, 46 2, 34 -18 C22 -35, 10 -18, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#B08D57" stroke-width="1.2"/>
-        <path d="M-10 -2 C-24 -10, -28 6, -16 18 C-6 26, 6 22, 12 12 C18 2, 10 -8, -10 -2 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M15 25 C25 45, 20 65, 10 80 C2 65, 4 48, 10 32 Z" fill="#B7BE9A" fill-opacity="0.4" stroke="#B08D57"/>
+    <svg class="corner-ornament corner-tl reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#B08D57" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#B08D57" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#B08D57" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#B08D57" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#B08D57"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#B08D57"/>
+        <circle cx="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
       </g>
     </svg>
 
-    <svg class="botanical-corner corner-bottom-left reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M10 150 L150 150 M10 150 L10 10" stroke="#B08D57" stroke-width="1.6"/>
-      <path d="M18 142 L130 142 M18 142 L18 30" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <!-- Rama y peonía inferior izquierda -->
-      <g transform="translate(55, 105)">
-        <path d="M0 0 C-20 -15, -35 4, -28 22 C-18 36, 2 40, 18 28 C32 18, 30 -2, 16 -14 C6 -22, -4 -8, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#B08D57" stroke-width="1.2"/>
-        <path d="M-6 4 C-16 6, -18 16, -10 22 C0 28, 10 22, 12 12 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M-20 -20 C-10 -45, -5 -65, -15 -85" stroke="#B08D57" stroke-width="1.4"/>
-        <path d="M-10 -40 C6 -35, 18 -42, 22 -55 C8 -60, -4 -54, -10 -40 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#B08D57"/>
+    <svg class="corner-ornament corner-tr reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#B08D57" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#B08D57" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#B08D57" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#B08D57" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#B08D57"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#B08D57"/>
+        <circle cx="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
       </g>
     </svg>
 
-    <svg class="botanical-corner corner-bottom-right reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M150 150 L10 150 M150 150 L150 10" stroke="#B08D57" stroke-width="1.6"/>
-      <path d="M142 142 L30 142 M142 142 L142 30" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <!-- Capullo y follaje inferior derecho -->
-      <g transform="translate(105, 105)">
-        <path d="M0 12 C12 0, 26 4, 30 16 C24 28, 8 32, -4 24 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#B08D57" stroke-width="1.2"/>
-        <path d="M-5 20 C-12 42, -22 70, -12 90" stroke="#B08D57" stroke-width="1.4"/>
-        <path d="M-8 38 C-25 35, -38 42, -40 54 C-28 60, -16 54, -8 38 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#B08D57"/>
+    <svg class="corner-ornament corner-bl reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#B08D57" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#B08D57" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#B08D57" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#B08D57" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#B08D57"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#B08D57"/>
+        <circle cx="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
       </g>
     </svg>
 
-    <!-- Contenido Central -->
-    <div class="main-content">
-      <p class="eyebrow reveal d1">Celebra con nosotros</p>
-      <p class="subtitle reveal d1">Nuestra boda</p>
-      <h1 class="names reveal d2">Fatima<span class="amp">&amp;</span>Marouan</h1>
-      <div class="date-line reveal d3">
-        <span class="date-part">Diciembre</span>
-        <span class="date-sep">|</span>
-        <span class="date-day">26</span>
-        <span class="date-sep">|</span>
-        <span class="date-part">2026</span>
-      </div>
-      <div class="scroll-hint reveal d4">
-        <span>Desliza</span>
-        <span class="line"></span>
-      </div>
+    <svg class="corner-ornament corner-br reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#B08D57" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#B08D57" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#B08D57" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#B08D57" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#B08D57" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#B08D57"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#B08D57"/>
+        <circle cx="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#B08D57" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#B08D57" opacity="0.6"/>
+      </g>
+    </svg>
+
+    <p class="eyebrow reveal d1">Celebra con nosotros</p>
+    <p class="subtitle reveal d1">Nuestra boda</p>
+    <h1 class="names reveal d2">Fatima<span class="amp">&amp;</span>Marouan</h1>
+    <div class="date-line reveal d3">
+      <span class="date-part">Diciembre</span>
+      <span class="date-sep">|</span>
+      <span class="date-day">26</span>
+      <span class="date-sep">|</span>
+      <span class="date-part">2026</span>
+    </div>
+    <div class="scroll-hint reveal d4">
+      <span>Desliza</span>
+      <span class="line"></span>
     </div>
   </section>
 
@@ -137,55 +198,123 @@
 
   <!-- ============ CIERRE ============ -->
   <section class="section" id="sec-4">
-    <div class="responsive-border reveal d1"></div>
+    <div class="frame reveal d1"></div>
 
-    <svg class="botanical-corner corner-top-left reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M10 10 L150 10 M10 10 L10 150" stroke="#D8C39A" stroke-width="1.6"/>
-      <path d="M18 18 L130 18 M18 18 L18 130" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <path d="M10 10 C45 35, 75 25, 95 10 C70 45, 60 75, 10 95" stroke="#D8C39A" stroke-width="1.2" fill="#B7BE9A" fill-opacity="0.35"/>
-      <path d="M25 25 C45 45, 65 40, 75 25 C60 55, 55 65, 25 75 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#D8C39A"/>
-    </svg>
-
-    <svg class="botanical-corner corner-top-right reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M150 10 L10 10 M150 10 L150 150" stroke="#D8C39A" stroke-width="1.6"/>
-      <path d="M142 18 L30 18 M142 18 L142 130" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <g transform="translate(105, 55)">
-        <path d="M0 0 C-22 -26, -48 -12, -40 14 C-32 34, -8 44, 14 30 C36 22, 46 2, 34 -18 C22 -35, 10 -18, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#D8C39A" stroke-width="1.2"/>
-        <path d="M-10 -2 C-24 -10, -28 6, -16 18 C-6 26, 6 22, 12 12 C18 2, 10 -8, -10 -2 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M15 25 C25 45, 20 65, 10 80 C2 65, 4 48, 10 32 Z" fill="#B7BE9A" fill-opacity="0.4" stroke="#D8C39A"/>
+    <svg class="corner-ornament corner-tl reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#D8C39A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#D8C39A" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#D8C39A" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#D8C39A" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#D8C39A"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#D8C39A"/>
+        <circle cx="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
       </g>
     </svg>
 
-    <svg class="botanical-corner corner-bottom-left reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M10 150 L150 150 M10 150 L10 10" stroke="#D8C39A" stroke-width="1.6"/>
-      <path d="M18 142 L130 142 M18 142 L18 30" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <g transform="translate(55, 105)">
-        <path d="M0 0 C-20 -15, -35 4, -28 22 C-18 36, 2 40, 18 28 C32 18, 30 -2, 16 -14 C6 -22, -4 -8, 0 0 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#D8C39A" stroke-width="1.2"/>
-        <path d="M-6 4 C-16 6, -18 16, -10 22 C0 28, 10 22, 12 12 Z" fill="#C98A7D" fill-opacity="0.6" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M-20 -20 C-10 -45, -5 -65, -15 -85" stroke="#D8C39A" stroke-width="1.4"/>
-        <path d="M-10 -40 C6 -35, 18 -42, 22 -55 C8 -60, -4 -54, -10 -40 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#D8C39A"/>
+    <svg class="corner-ornament corner-tr reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#D8C39A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#D8C39A" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#D8C39A" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#D8C39A" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#D8C39A"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#D8C39A"/>
+        <circle cx="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
       </g>
     </svg>
 
-    <svg class="botanical-corner corner-bottom-right reveal d1" viewBox="0 0 160 160" fill="none">
-      <path d="M150 150 L10 150 M150 150 L150 10" stroke="#D8C39A" stroke-width="1.6"/>
-      <path d="M142 142 L30 142 M142 142 L142 30" stroke="#D8C39A" stroke-width="0.8" stroke-dasharray="3 3"/>
-      <g transform="translate(105, 105)">
-        <path d="M0 12 C12 0, 26 4, 30 16 C24 28, 8 32, -4 24 Z" fill="#C98A7D" fill-opacity="0.45" stroke="#D8C39A" stroke-width="1.2"/>
-        <path d="M-5 20 C-12 42, -22 70, -12 90" stroke="#D8C39A" stroke-width="1.4"/>
-        <path d="M-8 38 C-25 35, -38 42, -40 54 C-28 60, -16 54, -8 38 Z" fill="#B7BE9A" fill-opacity="0.45" stroke="#D8C39A"/>
+    <svg class="corner-ornament corner-bl reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#D8C39A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#D8C39A" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#D8C39A" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#D8C39A" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#D8C39A"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#D8C39A"/>
+        <circle cx="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
       </g>
     </svg>
 
-    <div class="main-content">
-      <p class="closing-msg reveal d2">Con la bendición de <span class="arabic-inline">الله</span> y el cariño de nuestras familias, os invitamos a compartir este día tan especial.</p>
-      <svg class="closing-divider reveal d3" viewBox="0 0 60 14" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 7 H24" stroke="#D8C39A" stroke-width="0.8"/>
-        <path d="M36 7 H60" stroke="#D8C39A" stroke-width="0.8"/>
-        <rect x="27" y="4" width="6" height="6" transform="rotate(45 30 7)" fill="none" stroke="#D8C39A" stroke-width="0.9"/>
-      </svg>
-      <p class="closing-names reveal d3">Fatima &amp; Marouan</p>
-    </div>
+    <svg class="corner-ornament corner-br reveal d1" viewBox="-6 -6 152 152" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 6 C 36 14 24 48 60 56 C 82 61 96 42 124 48" stroke="#D8C39A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <path d="M60 56 C 68 78 46 86 64 106" stroke="#D8C39A" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M124 48 C 132 54 130 62 138 66" stroke="#D8C39A" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.85"/>
+      <path d="M22 30 C 12 26 8 34 14 42 C 22 38 24 33 22 30 Z" stroke="#D8C39A" stroke-width="1" fill="none"/>
+      <path d="M60 56 C 50 50 47 40 54 34 C 62 40 64 50 60 56 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.9"/>
+      <path d="M64 106 C 56 110 55 120 63 124 C 70 119 69 111 64 106 Z" stroke="#D8C39A" stroke-width="1" fill="none" opacity="0.85"/>
+      <g transform="translate(40,18)">
+        <ellipse cx="0" cy="-4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="0" cy="4" rx="3" ry="4.2" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="-4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <ellipse cx="4" cy="0" rx="4.2" ry="3" fill="#C98A7D" opacity="0.85"/>
+        <circle r="2" fill="#D8C39A"/>
+      </g>
+      <g transform="translate(138,66)">
+        <circle r="3.2" fill="#D8C39A"/>
+        <circle cx="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cy="-7" r="2" fill="#D8C39A" opacity="0.8"/>
+        <circle cx="5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+        <circle cx="-5" cy="-5" r="1.5" fill="#D8C39A" opacity="0.6"/>
+      </g>
+    </svg>
+
+    <p class="closing-msg reveal d2">Con la bendición de <span class="arabic-inline">الله</span> y el cariño de nuestras familias, os invitamos a compartir este día tan especial.</p>
+    <svg class="closing-divider reveal d3" viewBox="0 0 60 14" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 7 H24" stroke="#D8C39A" stroke-width="0.8"/>
+      <path d="M36 7 H60" stroke="#D8C39A" stroke-width="0.8"/>
+      <rect x="27" y="4" width="6" height="6" transform="rotate(45 30 7)" fill="none" stroke="#D8C39A" stroke-width="0.9"/>
+    </svg>
+    <p class="closing-names reveal d3">Fatima &amp; Marouan</p>
   </section>
 
 </div>
