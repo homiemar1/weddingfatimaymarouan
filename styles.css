@@ -1,3 +1,5 @@
+
+Styles · CSS
 :root{
   --ivory:#F8F3E7;
   --ivory-2:#F1EAD9;
@@ -6,24 +8,26 @@
   --olive-soft:#B7BE9A;
   --gold:#B08D57;
   --gold-soft:#D8C39A;
+  --gold-light:#D9BD8C;
+  --gold-dark:#8C6D3E;
   --ink:#2E2A1E;
   --ink-soft:#5A5646;
   --blush:#C98A7D;
 }
-
+ 
 *{margin:0;padding:0;box-sizing:border-box;}
-
+ 
 html,body{
   height:100%;
   background:var(--ivory);
   color:var(--ink);
   font-family:'Cormorant Garamond', serif;
 }
-
+ 
 body{
   -webkit-font-smoothing:antialiased;
 }
-
+ 
 .scroll-container{
   height:100vh;
   height:100dvh;
@@ -31,7 +35,7 @@ body{
   scroll-snap-type:y mandatory;
   scroll-behavior:smooth;
 }
-
+ 
 .section{
   height:100vh;
   height:100dvh;
@@ -47,7 +51,7 @@ body{
   text-align:center;
   overflow:hidden;
 }
-
+ 
 .reveal{
   opacity:0;
   transform:translateY(18px);
@@ -61,39 +65,55 @@ body{
 .reveal.d2{transition-delay:.28s}
 .reveal.d3{transition-delay:.46s}
 .reveal.d4{transition-delay:.64s}
-
-/* ---------- Corner arabesque frame (portada + cierre) ---------- */
-/* ---------- Full rectangular frame (portada + cierre) ---------- */
-.frame{
+ 
+/* ---------- Thick frame with soft sheen + bevel (portada + cierre) ---------- */
+.frame-thick{
   position:absolute;
-  inset:20px;
-  border:1px solid var(--gold);
-  pointer-events:none;
+  inset:16px;
+  border: 6px solid transparent;
+  border-image: linear-gradient(135deg,
+    var(--gold-light) 0%,
+    var(--gold) 35%,
+    var(--gold-dark) 55%,
+    var(--gold) 75%,
+    var(--gold-light) 100%) 6;
+  box-shadow:
+    inset 1.5px 1.5px 0 rgba(255,255,255,0.22),
+    inset -1.5px -1.5px 0 rgba(0,0,0,0.3);
 }
-.frame::before{
-  content:'';
+.frame-edge-outer{
   position:absolute;
-  inset:7px;
-  border:1px solid var(--gold);
-  opacity:.55;
+  inset:14px;
+  border:1px solid var(--gold-dark);
+  opacity:.7;
 }
-#sec-4 .frame,
-#sec-4 .frame::before{
+.frame-edge-inner{
+  position:absolute;
+  inset:23px;
+  border:1px solid var(--gold-light);
+  opacity:.6;
+}
+.frame-mat-line{
+  position:absolute;
+  inset:29px;
+  border:1px solid var(--gold);
+  opacity:.4;
+}
+#sec-4 .frame-thick{
+  border-image: linear-gradient(135deg,
+    var(--gold-soft) 0%,
+    var(--gold) 35%,
+    var(--gold-dark) 55%,
+    var(--gold) 75%,
+    var(--gold-soft) 100%) 6;
+}
+#sec-4 .frame-edge-inner{
   border-color:var(--gold-soft);
 }
-
-.corner-ornament{
-  position:absolute;
-  width:104px;
-  height:104px;
-  z-index:1;
-  opacity:1;
+#sec-4 .frame-mat-line{
+  border-color:var(--gold-soft);
 }
-.corner-tl{ top:6px; left:6px; }
-.corner-tr{ top:6px; right:6px; transform:scaleX(-1); }
-.corner-bl{ bottom:6px; left:6px; transform:scaleY(-1); }
-.corner-br{ bottom:6px; right:6px; transform:scale(-1,-1); }
-
+ 
 /* ---------- Side progress thread ---------- */
 .thread{
   position:fixed;
@@ -121,7 +141,7 @@ body{
   stroke:var(--olive-deep);
   transition:stroke .4s ease;
 }
-
+ 
 /* ================= SECTION 0 — PORTADA ================= */
 #sec-0{
   background:
@@ -209,7 +229,7 @@ body{
   0%,100%{opacity:.25}
   50%{opacity:1}
 }
-
+ 
 /* ================= SECTION 1 — ALEYA ================= */
 #sec-1{background:var(--ivory);}
 .surah-mark{width:52px; margin-bottom:1.6rem;}
@@ -238,7 +258,7 @@ body{
   text-transform:uppercase;
   color:var(--gold);
 }
-
+ 
 /* ================= SECTION 2 — CUENTA ATRAS ================= */
 #sec-2{background:var(--ivory-2);}
 .section-eyebrow{
@@ -286,7 +306,7 @@ body{
   font-size:1.15rem;
   color:var(--ink-soft);
 }
-
+ 
 /* ================= SECTION 3 — UBICACION ================= */
 #sec-3{background:var(--ivory);}
 .venue-name{
@@ -327,7 +347,7 @@ body{
 .maps-btn svg{width:15px;height:15px;flex-shrink:0;}
 .maps-btn:hover svg path{stroke:var(--olive-deep);}
 .maps-btn svg path{stroke:var(--ivory); transition:stroke .35s ease;}
-
+ 
 /* ================= SECTION 4 — CIERRE ================= */
 #sec-4{background:var(--olive-deep); color:var(--ivory);}
 .closing-msg{
@@ -353,22 +373,24 @@ body{
   font-size:1.3rem;
   color:var(--gold-soft);
 }
-
+ 
 @media (max-width:520px){
   .thread{right:10px; gap:11px;}
   .thread button{width:15px; height:20px;}
   .countdown{gap:.9rem;}
-  .frame{ inset:12px; }
-  .frame::before{ inset:5px; }
-  .corner-ornament{ width:68px; height:68px; }
+  .frame-thick{ inset:10px; border-width:4px; }
+  .frame-edge-outer{ inset:9px; }
+  .frame-edge-inner{ inset:15px; }
+  .frame-mat-line{ inset:19px; }
   .corner-tl, .corner-tr{ top:2px; }
   .corner-bl, .corner-br{ bottom:2px; }
   .corner-tl, .corner-bl{ left:2px; }
   .corner-tr, .corner-br{ right:2px; }
 }
-
+ 
 @media (prefers-reduced-motion: reduce){
   .reveal{transition:none; opacity:1; transform:none;}
   .scroll-hint span.line{animation:none;}
   .scroll-container{scroll-behavior:auto;}
 }
+ 
