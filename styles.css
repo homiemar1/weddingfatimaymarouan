@@ -151,6 +151,7 @@ body{
   font-family:'Jost', sans-serif;
   font-size:.72rem;
   letter-spacing:.42em;
+  padding-left:.42em;
   text-transform:uppercase;
   color:var(--gold-soft);
   margin-bottom:.7rem;
@@ -192,6 +193,9 @@ body{
   text-transform:uppercase;
   color:var(--gold-soft);
 }
+.date-line .date-part:last-child{
+  margin-right:-.24em;
+}
 .date-line .date-day{
   font-family:'Marcellus', serif;
   font-size:1.6rem;
@@ -216,6 +220,9 @@ body{
   flex-direction:column;
   align-items:center;
   gap:.5rem;
+}
+.scroll-hint span:not(.line){
+  margin-right:-.28em;
 }
 .scroll-hint span.line{
   width:1px;
