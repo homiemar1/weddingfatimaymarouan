@@ -37,26 +37,33 @@ body{
   align-items:center;
   justify-content:center;
   overflow:hidden;
-  transition:opacity .6s ease;
 }
 .envelope.opening{
-  opacity:0;
   pointer-events:none;
 }
-.envelope-photo{
+.flap{
   position:absolute;
   inset:0;
   width:100%;
   height:100%;
-  object-fit:cover;
-  object-position:center;
-  display:block;
-  transition:transform .9s ease, opacity .9s ease;
+  background-image:url('envelope-seal.jpg');
+  background-size:cover;
+  background-position:center;
+  transition:transform 1s cubic-bezier(.65,0,.35,1);
+  will-change:transform;
 }
-.envelope.opening .envelope-photo{
-  transform:scale(1.15);
-  opacity:0;
-}
+/* las 4 lineas de recorte convergen en el punto donde esta el sello (49% 44%),
+   igual que los pliegues reales que se ven en la foto */
+.flap-top{ clip-path:polygon(0% 0%, 100% 0%, 49% 44%); }
+.flap-right{ clip-path:polygon(100% 0%, 100% 100%, 49% 44%); }
+.flap-bottom{ clip-path:polygon(100% 100%, 0% 100%, 49% 44%); }
+.flap-left{ clip-path:polygon(0% 100%, 0% 0%, 49% 44%); }
+
+.envelope.opening .flap-top{ transform:translateY(-115%); }
+.envelope.opening .flap-right{ transform:translateX(115%); }
+.envelope.opening .flap-bottom{ transform:translateY(115%); }
+.envelope.opening .flap-left{ transform:translateX(-115%); }
+
 .wax-seal-hit{
   position:absolute;
   top:44%;
@@ -71,11 +78,12 @@ body{
   border:none;
   padding:0;
   cursor:pointer;
-  transition:transform .4s ease, opacity .4s ease;
+  z-index:2;
+  transition:opacity .3s ease;
 }
-.wax-seal-hit.crack{
-  transform:translate(-50%,-50%) scale(0.85);
+.envelope.opening .wax-seal-hit{
   opacity:0;
+  pointer-events:none;
 }
 .envelope-hint{
   position:absolute;
@@ -91,7 +99,8 @@ body{
   padding:.55rem 1.1rem;
   border-radius:2px;
   backdrop-filter:blur(2px);
-  transition:opacity .5s ease;
+  transition:opacity .3s ease;
+  z-index:2;
 }
 .envelope.opening .envelope-hint{
   opacity:0;
