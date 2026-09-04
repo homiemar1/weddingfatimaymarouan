@@ -10,16 +10,23 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- 
+
+<!-- ============ SOBRE / SELLO DE LACRE ============ -->
+<div class="envelope" id="envelope">
+  <img src="envelope-seal.jpg" alt="" class="envelope-photo">
+  <button class="wax-seal-hit" id="waxSeal" aria-label="Toca el sello para abrir la invitación"></button>
+  <p class="envelope-hint">Toca el sello para abrir</p>
+</div>
+
 <div class="scroll-container" id="scrollContainer">
- 
+
   <!-- ============ PORTADA ============ -->
   <section class="section" id="sec-0">
         <div class="frame-thick reveal d1"></div>
     <div class="frame-edge-outer reveal d1"></div>
     <div class="frame-edge-inner reveal d1"></div>
     <div class="frame-mat-line reveal d1"></div>
- 
+
     <p class="eyebrow reveal d1">Celebra con nosotros</p>
     <p class="subtitle reveal d1">Nuestra boda</p>
     <h1 class="names reveal d2">Fatima<span class="amp">&amp;</span>Marouan</h1>
@@ -31,14 +38,14 @@
       <span class="date-part">2026</span>
     </div>
   </section>
- 
+
   <!-- ============ ALEYA ============ -->
   <section class="section" id="sec-1">
     <p class="arabic-verse reveal d2">وَمِنْ كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ</p>
     <p class="verse-translation reveal d3">&ldquo;Y de todas las cosas creamos parejas, para que reflexionéis.&rdquo;</p>
     <p class="verse-source reveal d4">Corán · Sura Adh-Dhariyat, 51:49</p>
   </section>
- 
+
   <!-- ============ CUENTA ATRAS ============ -->
   <section class="section" id="sec-2">
     <p class="section-eyebrow reveal d1">Cuenta atrás</p>
@@ -65,7 +72,7 @@
     </div>
     <p class="countdown-date reveal d3">Sábado, 26 de diciembre de 2026</p>
   </section>
- 
+
   <!-- ============ UBICACION ============ -->
   <section class="section" id="sec-3">
     <svg class="surah-mark reveal d1" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,14 +90,14 @@
       Cómo llegar
     </a>
   </section>
- 
+
   <!-- ============ CIERRE ============ -->
   <section class="section" id="sec-4">
         <div class="frame-thick reveal d1"></div>
     <div class="frame-edge-outer reveal d1"></div>
     <div class="frame-edge-inner reveal d1"></div>
     <div class="frame-mat-line reveal d1"></div>
- 
+
     <p class="closing-msg reveal d2">Con la bendición de <span class="arabic-inline">الله</span> y el cariño de nuestras familias, os invitamos a compartir este día tan especial.</p>
     <svg class="closing-divider reveal d3" viewBox="0 0 60 14" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 7 H24" stroke="#D8C39A" stroke-width="0.8"/>
@@ -99,9 +106,9 @@
     </svg>
     <p class="closing-names reveal d3">Fatima &amp; Marouan</p>
   </section>
- 
+
 </div>
- 
+
 <!-- ============ SIDE THREAD NAV ============ -->
 <nav class="thread" id="thread">
   <button data-target="sec-0" aria-label="Ir a portada" class="active">
@@ -120,9 +127,8 @@
     <svg viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 25 V13 C2 6 6 1 10 1 C14 1 18 6 18 13 V25" stroke-width="1.6" stroke-linecap="round"/></svg>
   </button>
 </nav>
- 
+
 <script src="script.js"></script>
- 
+
 </body>
 </html>
- 
