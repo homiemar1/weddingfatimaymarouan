@@ -144,53 +144,7 @@ body{
 .reveal.d3{transition-delay:.46s}
 .reveal.d4{transition-delay:.64s}
 
-/* ---------- Thick frame with soft sheen + bevel (portada + cierre) ---------- */
-.frame-thick{
-  position:absolute;
-  inset:16px;
-  border: 6px solid transparent;
-  border-image: linear-gradient(135deg,
-    var(--gold-light) 0%,
-    var(--gold) 35%,
-    var(--gold-dark) 55%,
-    var(--gold) 75%,
-    var(--gold-light) 100%) 6;
-  box-shadow:
-    inset 1.5px 1.5px 0 rgba(255,255,255,0.22),
-    inset -1.5px -1.5px 0 rgba(0,0,0,0.3);
-}
-.frame-edge-outer{
-  position:absolute;
-  inset:14px;
-  border:1px solid var(--gold-dark);
-  opacity:.7;
-}
-.frame-edge-inner{
-  position:absolute;
-  inset:23px;
-  border:1px solid var(--gold-light);
-  opacity:.6;
-}
-.frame-mat-line{
-  position:absolute;
-  inset:29px;
-  border:1px solid var(--gold);
-  opacity:.4;
-}
-#sec-4 .frame-thick{
-  border-image: linear-gradient(135deg,
-    var(--gold-soft) 0%,
-    var(--gold) 35%,
-    var(--gold-dark) 55%,
-    var(--gold) 75%,
-    var(--gold-soft) 100%) 6;
-}
-#sec-4 .frame-edge-inner{
-  border-color:var(--gold-soft);
-}
-#sec-4 .frame-mat-line{
-  border-color:var(--gold-soft);
-}
+/* ---------- Floral photo frame (portada + cierre), see #sec-0 / #sec-4 background ---------- */
 
 /* ---------- Side progress thread ---------- */
 .thread{
@@ -223,9 +177,13 @@ body{
 /* ================= SECTION 0 — PORTADA ================= */
 #sec-0{
   background:
-    radial-gradient(120% 90% at 50% 8%, rgba(176,141,87,0.16), transparent 55%),
+    url('frame-floral.jpg') center / cover no-repeat,
     var(--olive-deep);
   color:var(--ivory);
+  padding-top:15vh;
+  padding-bottom:15vh;
+  padding-left:13vw;
+  padding-right:13vw;
 }
 .eyebrow{
   font-family:'Jost', sans-serif;
@@ -434,13 +392,21 @@ body{
 .maps-btn svg path{stroke:var(--ivory); transition:stroke .35s ease;}
 
 /* ================= SECTION 4 — CIERRE ================= */
-#sec-4{background:var(--olive-deep); color:var(--ivory);}
+#sec-4{
+  background:url('frame-floral.jpg') center / cover no-repeat, var(--olive-deep);
+  color:var(--ivory);
+  padding-top:15vh;
+  padding-bottom:15vh;
+  padding-left:13vw;
+  padding-right:13vw;
+}
 .closing-msg{
   font-family:'Marcellus', serif;
-  font-size:clamp(1.4rem, 4.6vw, 1.9rem);
-  color:var(--ivory);
-  max-width:26ch;
-  line-height:1.55;
+  font-size:clamp(1.3rem, 4.2vw, 1.7rem);
+  color:#FFFFFF;
+  max-width:21ch;
+  line-height:1.6;
+  text-shadow:0 2px 10px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.5);
 }
 .closing-msg .arabic-inline{
   font-family:'Amiri', serif;
@@ -456,17 +422,14 @@ body{
   font-family:'Cormorant Garamond', serif;
   font-style:italic;
   font-size:1.3rem;
-  color:var(--gold-soft);
+  color:#FFFFFF;
+  text-shadow:0 2px 8px rgba(0,0,0,0.4);
 }
 
 @media (max-width:520px){
   .thread{right:10px; gap:11px;}
   .thread button{width:15px; height:20px;}
   .countdown{gap:.9rem;}
-  .frame-thick{ inset:10px; border-width:4px; }
-  .frame-edge-outer{ inset:9px; }
-  .frame-edge-inner{ inset:15px; }
-  .frame-mat-line{ inset:19px; }
   .corner-tl, .corner-tr{ top:2px; }
   .corner-bl, .corner-br{ bottom:2px; }
   .corner-tl, .corner-bl{ left:2px; }
