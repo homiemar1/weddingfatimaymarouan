@@ -4,9 +4,8 @@ const waxSeal = document.getElementById('waxSeal');
 
 if (envelope && waxSeal) {
   waxSeal.addEventListener('click', () => {
-    waxSeal.classList.add('crack');
-    setTimeout(() => envelope.classList.add('opening'), 150);
-    setTimeout(() => { envelope.style.display = 'none'; }, 1300);
+    envelope.classList.add('opening');
+    setTimeout(() => { envelope.style.display = 'none'; }, 1050);
   });
 }
 
