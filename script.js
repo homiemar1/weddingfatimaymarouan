@@ -39,6 +39,18 @@ const navObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.6 });
 sections.forEach(s => navObserver.observe(s));
 
+// ---------- Scroll Hint Click (Desliza para continuar) ----------
+const scrollHints = document.querySelectorAll('.scroll-hint');
+scrollHints.forEach(hint => {
+  hint.addEventListener('click', () => {
+    const currentSection = hint.closest('.section');
+    const nextSection = currentSection.nextElementSibling;
+    if (nextSection && nextSection.classList.contains('section')) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
 // ---------- Cuenta atrás hasta 26 Dic 2026, 00:00 (hora local) ----------
 const weddingDate = new Date('2026-12-26T00:00:00');
 
