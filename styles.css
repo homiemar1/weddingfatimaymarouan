@@ -284,6 +284,15 @@ body{
   opacity:.6;
   font-size:.95rem;
 }
+.time-line{
+  margin-top:.7rem;
+  font-family:'Jost', sans-serif;
+  font-size:.75rem;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--gold-soft);
+  padding-left:.24em;
+}
 
 /* ================= SECTION 1 — ALEYA ================= */
 #sec-1{background:var(--ivory);}
